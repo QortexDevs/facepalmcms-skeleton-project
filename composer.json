@@ -2,6 +2,7 @@
     "name": "xpundel/facepalmskeleton",
     "description": "The FacepalmCMS Skeleton Project.",
     "type": "project",
+    "version": "1.0.0",
     "repositories": [
         {
             "type": "composer",
