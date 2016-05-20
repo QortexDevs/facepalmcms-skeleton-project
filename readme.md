@@ -1,0 +1,2 @@
+# FacepalmCMS Skeleton Project
+

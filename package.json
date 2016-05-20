@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "gulp-watch": "*",
+    "gulp-plumber": "*",
+    "imagemin-pngquant": "*",
+    "yargs": "*",
+    "gulp-buster": "*",
+    "gulp-insert": "^0.5.0"
+  }
+}
