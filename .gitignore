@@ -20,6 +20,7 @@ Thumbs.db
 *.pyc
 !.gitattributes
 !.gitignore
+!.env.example
 
 #storage/
 
