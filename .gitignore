@@ -18,6 +18,7 @@ Thumbs.db
 *.zip
 *.*~
 *.pyc
+composer.lock
 !.gitattributes
 !.gitignore
 !.env.example
