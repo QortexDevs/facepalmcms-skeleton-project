@@ -5,7 +5,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "http://packages.dev.qortex.ru"
+            "url": "https://packages.dev.qortex.ru"
         }
     ],
     "require": {
