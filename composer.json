@@ -5,7 +5,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "http://packages.loc"
+            "url": "http://packages.dev.qortex.ru"
         }
     ],
     "require": {
@@ -50,7 +50,6 @@
         ]
     },
     "config": {
-        "secure-http": false,
         "preferred-install": "dist"
     }
 }

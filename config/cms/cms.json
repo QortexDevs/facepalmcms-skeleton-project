@@ -1,0 +1,11 @@
+{
+    "parameters": {
+        //todo: всякие параметры
+    },
+    "structure": [
+        "texts",
+        "values",
+        "structure",
+        "settings"
+    ]
+}
