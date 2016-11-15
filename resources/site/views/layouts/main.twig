@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <title>{{ meta.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link href='{{ staticRoot }}assets/build/site/css/vendor.css?{{ busters['assets/build/site/css/vendor.css'] }}'
+          rel='stylesheet' type='text/css'>
+    <link href='{{ staticRoot }}assets/build/site/css/main.css?{{ busters['assets/build/site/css/main.css'] }}' rel='stylesheet'
+          type='text/css'>
+
+    {#<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">#}
+    {#<link rel="icon" href="favicon.ico" type="image/x-icon">#}
+</head>
+<body data-token="{{ csrf_token }}">
+<div class="page-wrapper">
+   {% block pageContent %}
+    {% endblock pageContent %}
+ </div>
+<script>
+    var root = '{{ root }}';
+    var staticRoot = '{{ staticRoot }}';
+ </script>
+<script src="{{ staticRoot }}assets/build/site/js/vendor.js?{{ busters['assets/build/site/js/vendor.js'] }}"></script>
+<script src="{{ staticRoot }}assets/build/site/js/all.js?{{ busters['assets/build/site/js/all.js'] }}"></script>
+</body>
+</html>

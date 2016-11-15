@@ -1,23 +1,20 @@
 {
-    "name": "amberhouse",
-    "version": "0.0.1",
-    "authors": [
-        "Mikhail Lisnyak <xpundel@gmail.com>"
-    ],
-    "license": "MIT",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "jquery": "~2.1.*",
-        "jquery-touchswipe": "^1.6.16",
-        "unslider": "^2.0.3",
-        "velocity": "^1.2.3",
-        "select2": "^4.0.2"
-    }
+  "name": "amberhouse",
+  "version": "0.0.1",
+  "authors": [
+    "Mikhail Lisnyak <xpundel@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.*",
+    "html5shiv": "^3.7.3"
+  }
 }

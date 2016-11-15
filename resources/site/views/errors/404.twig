@@ -1,0 +1,18 @@
+{% set staticRoot = '/' %}
+{% set root = '/' %}
+
+{% extends 'layouts/main' %}
+
+{% block pageContent %}
+    {% set values = app.make('translation.loader').getStringValues() %}
+    <main class="gradient-short error-page">
+        <div class="article page-padding">
+            <h1>{{ values['error.404.header'] }}</h1>
+            <ul class="align-center">
+                <li><a href="javascript:history.back()">{{ values['error.404.back'] }}</a></li>
+                <li><a href="{{ staticRoot }}">{{ values['error.404.toMain'] }}</a></li>
+            </ul>
+        </div>
+    </main>
+
+{% endblock pageContent %}
