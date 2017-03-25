@@ -2,9 +2,7 @@
 /node_modules
 /bower_components
 
-#/public/assets/build
 /public/assets/facepalm
-/public/media/
 
 Homestead.yaml
 Homestead.json
@@ -23,7 +21,7 @@ composer.lock
 !.gitignore
 !.env.example
 
-#storage/
+storage/cms-config-cache.json
 
 #if building on server, uncomment this lines and remove files from git
 #busters.json
