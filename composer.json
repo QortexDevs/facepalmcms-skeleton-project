@@ -37,7 +37,8 @@
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "php artisan key:generate"
+            "php artisan key:generate",
+            "cd public/assets/ && ln -s ../../vendor/xpundel/facepalm/build/ facepalm && cd ../../"
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
