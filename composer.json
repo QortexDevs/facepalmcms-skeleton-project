@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "xpundel/facepalm":"1.8.*"
-        "laravel/tinker": "~1.0",
+        "xpundel/facepalm":"1.8.*",
+        "laravel/tinker": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
