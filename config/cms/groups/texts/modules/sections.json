@@ -11,13 +11,6 @@
     "navigation": {
         "model": "site_section",
         "titleField": "title",
-        "skip": [
-            1,
-            11,
-            6,
-            7,
-            8
-        ]
     },
     "forms": {
         "default": {
