@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "xpundel/facepalm": "dev-master"
+        "xpundel/facepalm": "1.5.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
