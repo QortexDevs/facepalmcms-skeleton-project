@@ -1,0 +1,106 @@
+@import "framework/main";
+@import "util";
+@import "colors";
+@import "layout";
+
+header {
+    font-size: 42px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 60px;
+}
+
+.dashboard-panels {
+    display: flex;
+    justify-content: space-between;
+
+    .panel {
+        &.panel-left {
+            width: 40%;
+        }
+        &.panel-right {
+            width: 50%;
+        }
+    }
+
+    .list-block {
+
+        &.with-header + .with-header {
+            margin-top: 40px;
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .title {
+                font-size: 26px;
+                text-align: left;
+                color: #373737;
+                flex-shrink: 0;
+            }
+
+            .spacer {
+                background: url('../i/dots-spacer.png') bottom 4px left 5px repeat-x;
+                width: 100%;
+            }
+
+            .number {
+                flex-shrink: 0;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: right;
+                color: #373737;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .tasks-list {
+        ol {
+            counter-reset: item;
+            li {
+                display: block;
+                padding-bottom: 10px;
+
+                &:before {
+                    content: counter(item) ". ";
+                    counter-increment: item;
+                    font-size: 17px;
+                    text-align: right;
+                    color: #c0c0c0;
+                    font-weight: 300;
+                }
+
+                .slash {
+                    font-weight: 300;
+                    color: #c0c0c0;
+                }
+
+                .secondary {
+                    font-weight: 300;
+                }
+
+            }
+        }
+    }
+
+    .tasks-by-person {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        + .tasks-by-person {
+            margin-top: 30px;
+        }
+
+        .person {
+            width:40%;
+            flex-shrink: 0;
+        }
+
+
+    }
+}

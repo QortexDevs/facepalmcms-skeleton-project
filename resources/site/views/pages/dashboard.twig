@@ -1,0 +1,56 @@
+{% extends "layouts/main" %}
+
+{% block pageContent %}
+    <header>
+        Задания
+    </header>
+    <div class="dashboard-panels">
+        <div class="panel panel-left">
+            <div class="list-block with-header">
+                <div class="header">
+                    <span class="title">В работе</span>
+                    <span class="spacer"></span>
+                    <span class="number">{{ tasksAtWork|length }}</span>
+                </div>
+                <div class="tasks-list">
+                    <ol>
+                        {% for task in tasksAtWork %}
+                            <li>{{ task.name }} <span class="slash">/</span> <span class="secondary">{{ task.parent.name ?: task.client.name }}</span>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+            <div class="list-block with-header">
+                <div class="header">
+                    <span class="title">На контроле</span>
+                    <span class="spacer"></span>
+                    <span class="number">{{ tasksAtControl|length }}</span>
+                </div>
+                <div class="tasks-list">
+                    <ol>
+                        {% for task in tasksAtControl %}
+                            <li>{{ task.name }} <span class="slash">/</span> <span class="secondary">{{ task.parent.name ?: task.client.name }}</span>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-right">
+            {% for personTasks in tasksByPeople %}
+                <div class="tasks-by-person">
+                    <div class="person">{{ personTasks[0].users[0].full_name }}</div>
+                    <div class="tasks-list">
+                        <ol>
+                            {% for task in personTasks %}
+                                <li>{{ task.name }} <span class="slash">/</span> <span class="secondary">{{ task.parent.name ?: task.client.name }}</span>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock pageContent %}

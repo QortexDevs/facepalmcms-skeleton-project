@@ -1,0 +1,44 @@
+<div class="weights-of-product">
+    {% if(variableParameters) %}
+        <table>
+            <tr>
+                <th></th>
+                {% if(variableParameters[1]) %}
+                    {% for variantVal,variantName in variableParameters[1].variants %}
+                        <th>{{ variantName }}</th>
+                    {% endfor %}
+                {% else %}
+                    <th></th>
+                {% endif %}
+            </tr>
+            {% for variantVal,variantName in variableParameters[0].variants %}
+                <tr>
+                    <th class="left">{{ variantName }}</th>
+                    {% if(variableParameters[1]) %}
+                        {% for variantVal2,variantName2 in variableParameters[1].variants %}
+                            <td>
+                                <input name="{{ inputName }}[{{ variantVal }}][{{ variantVal2 }}][availability]"
+                                       {% if weights[variantVal][variantVal2]['availability'] %}checked{% endif %}
+                                       value="1"
+                                       type="checkbox"
+                                       title="Наличие">
+                                <input name="{{ inputName }}[{{ variantVal }}][{{ variantVal2 }}][weight]"
+                                       value="{{ weights[variantVal][variantVal2]['weight'] }}" type="text">
+                            </td>
+                        {% endfor %}
+                    {% else %}
+                        <td>
+                            <input name="{{ inputName }}[{{ variantVal }}][availability]"
+                                   {% if weights[variantVal]['availability'] %}checked{% endif %}
+                                   value="1"
+                                   type="checkbox"
+                                   title="Наличие">
+                            <input name="{{ inputName }}[{{ variantVal }}][weight]"
+                                   value="{{ weights[variantVal]['weight'] }}" type="text">
+                        </td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>

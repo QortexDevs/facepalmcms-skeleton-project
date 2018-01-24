@@ -1,0 +1,24 @@
+{
+  "name": "amberhouse",
+  "version": "0.0.1",
+  "authors": [
+    "Mikhail Lisnyak <xpundel@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.*",
+    "html5shiv": "^3.7.3",
+    "jquery-mask-plugin": "^1.14.10",
+    "scrollmagic": "^2.0.5",
+    "switchery": "^0.8.2",
+    "pickadate": "^3.5.6"
+  }
+}

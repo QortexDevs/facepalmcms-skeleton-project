@@ -1,0 +1,14 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center-x {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.align-center {
+    text-align: center;
+}

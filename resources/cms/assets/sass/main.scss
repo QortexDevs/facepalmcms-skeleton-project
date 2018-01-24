@@ -1,0 +1,96 @@
+//@charset "utf-8";
+//
+//.cms-button {
+//    &.cancel-order {
+//        margin-left: 50px;
+//        background: transparent;
+//        color: #ff9999;
+//        box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.3);
+//    }
+//}
+//
+//button.swal2-styled {
+//    outline: none;
+//}
+//
+//body {
+//    &.login-page {
+//        background-image: url('../i/bg.jpg') !important;
+//        .bg {
+//            opacity: .7;
+//            background: linear-gradient(to right, #494654 0%, #66506d 50%, #655b60 100%);
+//        }
+//        .container {
+//            .login-form {
+//                position: static;
+//
+//                &:before {
+//                    content: 'Система внутренних почтовых рассылок';
+//                    font-weight: 100;
+//                    font-size: 26px;
+//                    margin-bottom: 30px;
+//                    color: #fff;
+//                    margin-left: 30px;
+//                }
+//
+//                .logo {
+//                    background: url("../../../../logo1.png");
+//                    width: 96px;
+//                    height: 78px;
+//                    margin-bottom: 0;
+//                    margin-left: 0;
+//                    position: absolute;
+//                    left: 20px;
+//                    bottom: 20px;
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//.main-menu {
+//    display: flex;
+//    flex-direction: column-reverse;
+//    justify-content: space-between;
+//    .panels {
+//        min-height: auto;
+//    }
+//    .logo-bar {
+//        background: none;
+//        height: 130px;
+//        padding: 20px;
+//        .logo {
+//            margin-top: 5px;
+//            background: url("../../../../logo1.png") no-repeat;
+//            width: 96px;
+//            height: 78px;
+//        }
+//    }
+//}
+//
+//.template-chooser {
+//    .template {
+//        display: inline-block;
+//        margin-right: 20px;
+//
+//        input[type="radio"] {
+//            display: none;
+//
+//            & + label {
+//                display: inline-block;
+//                width: 110px;
+//                height: 110px;
+//                border: 4px solid transparent;
+//                background-size: cover;
+//                background-repeat: no-repeat;
+//                cursor: pointer;
+//                border-radius: 5px;
+//            }
+//
+//            &:checked+label {
+//                border-color: #24b685;
+//            }
+//
+//        }
+//    }
+//}

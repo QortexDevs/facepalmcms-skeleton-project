@@ -1,0 +1,15 @@
+.responsive_square {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3px;
+
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+}

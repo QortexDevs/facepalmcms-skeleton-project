@@ -1,0 +1,16 @@
+{#{% for id,name in parameters.dictionary %}#}
+    {#<option value="{{ id }}" title="{{ name }}"#}
+            {#{% if (object and id == object.__get(parameters.foreignKey)) or (not object and id==parameters.forceValue) %}selected{% endif %}>{{ name }}</option>#}
+{#{% endfor %}#}
+{#{{ dump(templates) }}#}
+<div class="template-chooser">
+    {% for template in templates %}
+        <div class="template">
+            <input type="radio" id="template_chooser_id_{{ template.id }}" name="{{ fieldNameBase }}[{{ parameters.foreignKey }}]"
+                   value="{{ template.id }}"
+                   {% if (object and template.id == object.__get(parameters.foreignKey)) or (not object and template.id==parameters.forceValue) or (parameters.noEmpty and loop.first) %}selected checked{% endif %}>
+            <label for="template_chooser_id_{{ template.id }}"
+                   style="background-image: url('{{ template.imagesByGroup('bg')[0].getUri('110x110') }}')"></label>
+        </div>
+    {% endfor %}
+</div>
